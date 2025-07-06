@@ -1,0 +1,109 @@
+/* ===== Estilos para TecnoAsistencia PY ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #020c1b, #0f172a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  color: #00bfff;
+  z-index: 2;
+  text-shadow: 0 0 10px #00bfff, 0 0 20px #0080ff;
+  animation: fadeInDown 1.2s ease;
+}
+
+nav.nav {
+  z-index: 2;
+  margin-top: 30px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: #00bfff;
+  color: #000;
+}
+
+.contenido {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.boton-grande {
+  display: block;
+  background: #00bfff;
+  color: #000;
+  font-size: 1.4rem;
+  padding: 1.2rem 2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00bfff80;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.boton-grande:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+  color: #000;
+}
+
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #0a0a0a;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
