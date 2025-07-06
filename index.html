@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TecnoAsistencia PY</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoAsistencia PY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header class="hero">
-    <div class="overlay"></div>
-    <h1 class="titulo">TecnoAsistencia PY</h1>
-    <nav class="nav">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios Técnicos</a></li>
-        <li><a href="#faq">Preguntas Frecuentes</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>TecnoAsistencia PY</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios Técnicos</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="contenido">
-    <section class="botones">
-      <a class="boton-grande" href="personalizar.html">Personalizar PC</a>
-      <a class="boton-grande" href="pc-personalizado.html">PC Personalizado</a>
-    </section>
-  </main>
+    <main>
+        <section class="hero">
+            <button class="btn-primary" id="personalizar-pc">Personalizar PC</button>
+            <button class="btn-secondary" id="pc-personalizado">PC Personalizado</button>
+        </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 TecnoAsistencia PY. Todos los derechos reservados.</p>
-  </footer>
+        <section id="builder-container" class="hidden">
+            <h2>Arma tu PC Ideal</h2>
+            <p>Selecciona los componentes para tu PC personalizada.</p>
+
+            <div class="component-selector">
+                <h3>Componentes</h3>
+                <ul id="component-list">
+                    <li data-component="cpu">CPU</li>
+                    <li data-component="gpu">GPU</li>
+                    <li data-component="ram">RAM</li>
+                    <li data-component="storage">Almacenamiento</li>
+                    <li data-component="psu">Fuente de Poder</li>
+                    <li data-component="case">Gabinete</li>
+                </ul>
+            </div>
+
+            <div class="component-details">
+                <h3>Detalles del Componente</h3>
+                <div id="component-info">
+                    <p>Selecciona un componente para ver sus detalles.</p>
+                </div>
+            </div>
+
+            <button id="build-pc">Construir PC</button>
+        </section>
+
+        <section id="pc-predefinidas" class="hidden">
+            <h2>PC Personalizadas</h2>
+            <div class="pc-card">
+                <h3>PC Gamer Básica</h3>
+                <p>Ideal para juegos de nivel de entrada.</p>
+                <ul>
+                    <li>CPU: Intel Core i5</li>
+                    <li>GPU: NVIDIA GeForce GTX 1660</li>
+                    <li>RAM: 16GB</li>
+                    <li>Almacenamiento: 500GB SSD</li>
+                </ul>
+                <button>Comprar</button>
+            </div>
+            <div class="pc-card">
+                <h3>PC Gamer Avanzada</h3>
+                <p>Ideal para juegos de nivel de entrada.</p>
+                <ul>
+                    <li>CPU: Intel Core i7</li>
+                    <li>GPU: NVIDIA GeForce RTX 3070</li>
+                    <li>RAM: 32GB</li>
+                    <li>Almacenamiento: 1TB SSD</li>
+                </ul>
+                <button>Comprar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TecnoAsistencia PY</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
