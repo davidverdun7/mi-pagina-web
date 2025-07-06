@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Personalizado | TecnoAsistencia PY</title>
+  <style>
+    body { background: #0d1117; color: white; font-family: sans-serif; margin: 0; padding: 0; }
+    .header { background: #020c1b; padding: 1rem; text-align: center; }
+    .header h1 { color: #00bfff; }
+    .lista-pcs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 2rem; }
+    .pc-box {
+      background: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px #00bfff33;
+    }
+    .pc-box h2 { color: #00bfff; margin-bottom: 0.5rem; }
+    .pc-box ul { list-style: none; padding: 0; }
+    .pc-box li { padding: 5px 0; border-bottom: 1px solid #222; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Modelos de PC Armadas</h1>
+  </div>
+  <div class="lista-pcs">
+    <div class="pc-box">
+      <h2>Gamer Pro</h2>
+      <ul>
+        <li>CPU: Ryzen 5 5600X</li>
+        <li>GPU: RTX 3060</li>
+        <li>RAM: 16GB DDR4</li>
+        <li>Almacenamiento: 1TB SSD</li>
+        <li>Placa madre: B550</li>
+        <li>Fuente: 650W 80+ Bronze</li>
+      </ul>
+    </div>
+
+    <div class="pc-box">
+      <h2>Oficina Plus</h2>
+      <ul>
+        <li>CPU: Intel i5 12400</li>
+        <li>GPU: UHD integrada</li>
+        <li>RAM: 8GB DDR4</li>
+        <li>Almacenamiento: 512GB SSD</li>
+        <li>Placa madre: H610</li>
+        <li>Fuente: 500W</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
