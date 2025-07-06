@@ -6,6 +6,13 @@
     <title>TecnoAsistencia PY</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #scene-container {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -43,12 +50,7 @@
                 </ul>
             </div>
 
-            <div class="component-details">
-                <h3>Detalles del Componente</h3>
-                <div id="component-info">
-                    <p>Selecciona un componente para ver sus detalles.</p>
-                </div>
-            </div>
+            <div id="scene-container"></div>
 
             <button id="build-pc">Construir PC</button>
         </section>
@@ -68,7 +70,7 @@
             </div>
             <div class="pc-card">
                 <h3>PC Gamer Avanzada</h3>
-                <p>Ideal para juegos de nivel de entrada.</p>
+                <p>Ideal para juegos de alto rendimiento.</p>
                 <ul>
                     <li>CPU: Intel Core i7</li>
                     <li>GPU: NVIDIA GeForce RTX 3070</li>
@@ -84,6 +86,8 @@
         <p>&copy; 2024 TecnoAsistencia PY</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.135.0/examples/js/loaders/GLTFLoader.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
